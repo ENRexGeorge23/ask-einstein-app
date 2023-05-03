@@ -89,8 +89,8 @@ class ChatWidget extends StatelessWidget {
               if (chatIndex == 0)
                 Image.asset(
                   AssetsManager.userImage,
-                  height: 60,
-                  width: 60,
+                  height: 45,
+                  width: 45,
                 ),
             ],
           ),
@@ -116,8 +116,8 @@ class UserChatBubble extends StatelessWidget {
       alignment: Alignment.centerRight,
       child: Container(
         constraints:
-            BoxConstraints(maxWidth: MediaQuery.of(context).size.width * 0.7),
-        padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
+            BoxConstraints(maxWidth: MediaQuery.of(context).size.width * 0.6),
+        padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 10.0),
         decoration: BoxDecoration(
           color: const Color(0xFF007AFF),
           borderRadius: BorderRadius.only(
