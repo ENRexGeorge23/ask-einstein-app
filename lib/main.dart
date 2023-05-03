@@ -29,10 +29,14 @@ class MyApp extends StatelessWidget {
         title: 'askEinstein',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-            scaffoldBackgroundColor: scaffoldBackgroundColor,
-            appBarTheme: AppBarTheme(
-              color: cardColor,
-            )),
+          scaffoldBackgroundColor: scaffoldBackgroundColor,
+          appBarTheme: AppBarTheme(
+            color: cardColor,
+          ),
+          textSelectionTheme: TextSelectionThemeData(
+            selectionColor: Colors.red.withOpacity(0.4),
+          ),
+        ),
         home: const ChatScreen(),
       ),
     );

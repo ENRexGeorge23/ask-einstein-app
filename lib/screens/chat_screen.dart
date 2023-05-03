@@ -75,7 +75,6 @@ class _ChatScreenState extends State<ChatScreen> {
             Flexible(
               child: ListView.builder(
                   controller: _listScrollController,
-                  // Add this line to reverse the order
                   itemCount: chatProvider.getChatList.length,
                   itemBuilder: (context, index) {
                     return ChatWidget(
@@ -92,13 +91,10 @@ class _ChatScreenState extends State<ChatScreen> {
                 size: 18,
               ),
             ],
-            const SizedBox(
-              height: 15,
-            ),
             Material(
               color: const Color.fromARGB(255, 45, 46, 47),
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: const EdgeInsets.all(15.0),
                 child: Row(
                   children: [
                     Expanded(
@@ -112,7 +108,7 @@ class _ChatScreenState extends State<ChatScreen> {
                               chatProvider: chatProvider);
                         },
                         decoration: const InputDecoration.collapsed(
-                            hintText: "Unsa naman sad imong gusto? ",
+                            hintText: "Ask me anything....",
                             hintStyle: TextStyle(color: Colors.grey)),
                       ),
                     ),
@@ -129,6 +125,9 @@ class _ChatScreenState extends State<ChatScreen> {
                   ],
                 ),
               ),
+            ),
+            const SizedBox(
+              height: 15,
             ),
           ],
         ),
