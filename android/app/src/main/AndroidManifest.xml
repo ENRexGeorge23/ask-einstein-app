@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.chatgpt_course">
+    package="com.example.ask_einstein">
     <uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="Ask Einstein"
