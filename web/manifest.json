@@ -1,6 +1,6 @@
 {
-    "name": "chatgpt_course",
-    "short_name": "chatgpt_course",
+    "name": "Ask Einstein",
+    "short_name": "Ask Einstein",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

@@ -94,7 +94,7 @@ class _ChatScreenState extends State<ChatScreen> {
             Material(
               color: const Color.fromARGB(255, 45, 46, 47),
               child: Padding(
-                padding: const EdgeInsets.all(15.0),
+                padding: const EdgeInsets.all(20.0),
                 child: Row(
                   children: [
                     Expanded(
